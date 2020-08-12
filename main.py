@@ -1,4 +1,4 @@
-import sklearn import tree
+from sklearn import tree
 
 X = [
   [150, 0],
@@ -10,7 +10,7 @@ X = [
 y = [0, 0, 1, 1]
 
 clf = tree.DecisionTreeClassifier()
-clf = clf.fit(x, y)
+clf = clf.fit(X, y)
 
 predict = clf.predict([ [135, 1], [160, 0] ])
 
